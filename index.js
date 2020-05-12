@@ -4,6 +4,7 @@ import TransitLink from "./lib/TransitLink";
 import TransitView from "./lib/TransitView";
 import { cfgDefault } from "./util/config";
 import e from "./util/e.js";
+import { transitProps } from "./util/transitProps";
 
 
 
@@ -44,5 +45,6 @@ export default {
     Vue.component(cfg.transitComponentName, Transit(Vue, cfg));
     Vue.component(cfg.transitLinkComponentName, TransitLink(Vue, cfg));
     Vue.component(cfg.transitViewComponentName, TransitView(Vue, cfg));
-  }
+  },
+  transitProps
 };
