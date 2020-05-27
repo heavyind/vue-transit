@@ -1,6 +1,6 @@
 {
   "name": "@heavyind/vue-transit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transition animations for route changes",
   "main": "/dist/vue-transit.cjs.js",
   "module": "/dist/vue-transit.esm.js",
