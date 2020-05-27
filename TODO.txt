@@ -1,0 +1,12 @@
+
+Sort out initialization sequence.
+  The sequence logic here is pretty questionable.
+  1 What should happen when it is delayed (by, say, giving a 1000ms setTimeout within the root component)? 
+    Because the current situation is that the transit-ified elements appear (as in, opacity: 1), wait,
+    disappear, and then animate in. Doesn't seem like it's the behavior you would expect. But what is?
+  2 Should `initOnly` behavior be disconnected from initialization? Is initialization even necessary? Can
+    a `once` flag simply be set on the first transitionend event? (Do they fire if elements are removed 
+    before transitions are finished?)
+  NB: Removing initialization entirely will obviate 1) above, and it's really the ideal situation if it
+  can be done. But why the hell did I decide it was so necessary in the first place (other putting it in
+  the root element so the set didn't have to be repeated on every single transition)?
