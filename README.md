@@ -20,3 +20,4 @@ To begin with, it's actually not terribly flexible for animation. The API is, in
 ## API
 
 The elements can be configured with a duration, delay, timing functions, and other options.
+
