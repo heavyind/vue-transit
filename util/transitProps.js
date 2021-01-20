@@ -45,6 +45,11 @@ export const transitProps = {
       type: Function,
       required: false,
       default: () => {}
+    },
+    intersect: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 };
